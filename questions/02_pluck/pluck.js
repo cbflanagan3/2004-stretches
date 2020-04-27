@@ -17,7 +17,14 @@ returns { a: 1, c: 42};
 */
 
 function pluck(obj, elements) {
-  // YOUR CODE
+  newObj = {};
+  for (let [key, value] of Object.entries(obj)) {
+    if (elements.includes(key)) {
+      newObj.push(`${key}: ${value}`);
+    }
+  }
+
+  return newObj;
 }
 
 module.exports = { pluck };
