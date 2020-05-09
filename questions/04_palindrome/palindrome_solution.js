@@ -1,5 +1,11 @@
 const validPalindrome = (str) => {
-    const newString = String(str);
+    const newString = String(str).toLowerCase();
+    const punctuation = ['.', ',', ' ', '?', '!'];
+    punctuation.forEach(char) => {
+        if (newString.includes(char)) {
+            newString = newString.split(char).join("");
+        }
+    }
     if(newString.length === 0 || newString.length ===1) {
         return true;
     }
