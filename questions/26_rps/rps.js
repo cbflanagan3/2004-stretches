@@ -7,6 +7,15 @@ Rock defeats Scissors
 */
 
 class RPS {
+  constructor() {
+    this.players = [];
+    this.score = 0;
+  }
+
+  play(moveOne, moveTwo) {
+
+
+  }
   //YOUR CODE HERE
 }
 
