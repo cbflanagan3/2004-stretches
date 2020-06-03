@@ -4,10 +4,20 @@
 
 class StatefulThing {
   constructor(initialState = {}) {
+    this.previousStates = [];
     this.state = initialState;
   }
-  setState() {
+  setState(newState) {
     // YOUR CODE
+    this.previousStates.push(this.state);
+    this.state = Object.assign({}, this.state, newState);
+    return this.state;
+
+  }
+
+  goBack() {
+    this.state = this.previousStates.pop();
+    return this.state;
   }
 }
 
