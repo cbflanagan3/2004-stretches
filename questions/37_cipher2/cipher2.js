@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const decypher = (str) => {
   let newStr = '';
   let charCode = '';
@@ -18,6 +19,9 @@ const decypher = (str) => {
   let lastChar = newStr.slice(2)
   newStr += lastChar;
   return newStr;
+=======
+const decypher = () => {
+>>>>>>> b994823313926a9c8f9f8dbf85f03796c93b727c
   //YOUR CODE HERE
 };
 module.exports = { decypher };
