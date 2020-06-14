@@ -7,7 +7,17 @@ class Box {
     }
 
     pack() {
-        this.contents.push(new Box);
+         if (this.contents.length >= this.capacity) {
+            throw new Error ('No room!')
+        } else {
+            this.contents.push(new Box);
+        }
+    }
+
+    unpack() {
+
+        console.log(this.contents)
+        return this.contents.color;
     }
 
 }
