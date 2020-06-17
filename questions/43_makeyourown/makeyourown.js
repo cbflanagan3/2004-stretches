@@ -8,9 +8,7 @@ const makeyourown = (library) => {
   return Math.round(
     library.reduce((average, book) => {
       return average + book.rating}, 0) / library.length
-     
-
-    )
+      )
   
   // console.log('make your own stretch!');
 };
