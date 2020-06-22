@@ -17,7 +17,12 @@
 // result = "csps123"
 
 const encryptString = (str, shift) => {
-  // YOUR CODE
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  let numbers = '123456789'.split('');
+  let newString = '';
+  for (let i = 0; i < str.length; i ++) {
+    if (arr[i])
+  }
 };
 
 module.exports = { encryptString };
