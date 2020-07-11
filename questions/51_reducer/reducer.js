@@ -34,6 +34,7 @@ const reducer = (state = initialState, action) => {
         }
       case types.COMPLETE_TODO:
         return {
+          ...state,
           completed: true,
         }
     default:
